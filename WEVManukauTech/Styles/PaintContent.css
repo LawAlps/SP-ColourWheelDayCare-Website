@@ -1,0 +1,26 @@
+﻿/*Paint background colour game*/
+#paintBackground {
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    width: 640px;
+}
+
+#actualBackground {
+    width: 100%;
+}
+
+/*Smaller screens should hide objects to avoid overlapping*/
+@media screen and (max-width: 700px) {
+    #paintBackground {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #actualBackground {
+        visibility: hidden;
+        position: absolute;
+    }
+}

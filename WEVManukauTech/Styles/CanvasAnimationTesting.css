@@ -1,0 +1,87 @@
+﻿/*Test canvas animation*/
+#animationEffect1 {
+    background-color: cornflowerblue;
+    color: ghostwhite;
+    border-radius: 10px; /*Surrounding corners of canvas layout, to smoothen corners of object*/
+    padding: 5px;
+    width: 200px;
+    transition: width 2s, transform 2s;
+    /*animation-iteration-count: infinite;*/
+}
+
+    #animationEffect1:hover {
+        width: 200px;
+        color: ghostwhite;
+        background-color: lightskyblue;
+        text-decoration: none;
+        transform: rotate(360deg);
+    }
+
+#animationEffect2 {
+    background-color: cadetblue;
+    color: ghostwhite;
+    border-radius: 10px;
+    height: 100px;
+    width: 200px;
+    position: relative;
+    animation-name: testAnimation1; /*Use any name to test key frame animation*/
+    animation-duration: 5s;
+    animation-iteration-count: infinite; /*Doesn't break the loop of transition duration*/
+    clear: both;
+}
+
+#animationEffect3 {
+    background-color: cornflowerblue;
+    color: ghostwhite;
+    border-radius: 10px; /*Surrounding corners of canvas layout, to smoothen corners of object*/
+    padding: 5px;
+    width: 200px;
+    /*animation-iteration-count: infinite;*/
+}
+
+    #animationEffect3:hover {
+        width: 200px;
+        color: ghostwhite;
+        background-color: lightskyblue;
+        text-decoration: none;
+    }
+
+/*Key frames allow users to create code for testing animations or transitions of any object*/
+@keyframes testAnimation1 {
+    0% {
+        background-color: darkblue;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: dodgerblue;
+        left: 1000px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 1000px;
+        top: 0px;
+    }
+
+    75% {
+        background-color: midnightblue;
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        background-color: darkblue;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #animationEffect2, #animationEffect3 {
+        visibility: hidden;
+        position: absolute;
+    }
+}

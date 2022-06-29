@@ -1,0 +1,65 @@
+﻿        *    {/*Font sizing and layout*/
+            box-sizing: border-box;
+            font-family: 'Arial';
+        }
+
+        body {
+            background-color: lightblue;
+        }
+        
+        header {/*Test header layout*/
+            background-color: lightblue;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            clear: both;
+        }
+        /*Body content displayed in outer div and seperate columns*/
+
+        #outerDiv {
+             background-color: honeydew;
+             max-width: 1300px;
+             margin: auto;
+         }
+        
+        .col1 {
+            display: block;
+            float: left;
+            padding: 25px;
+            width: 33%;
+        }
+
+        .col2 {
+            display: block;
+            float: left;
+            padding: 25px;
+            width: 50%;
+        }
+
+        .col3 {
+            display: block;
+            float: left;
+            padding: 25px;
+            width: 100%;
+        }
+        
+        /*Test footer layout*/
+        footer {
+            background-color: dodgerblue;
+            padding: 10px;
+            text-align: center;
+            color: black;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /*Test for responsiveness on smaller screens*/
+        @media screen and (max-width: 800px) {
+            header, col1, col2, col3 {
+                width: 100%;
+                height: auto;
+            }
+        }

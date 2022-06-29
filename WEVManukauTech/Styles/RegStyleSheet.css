@@ -1,0 +1,43 @@
+﻿
+ul {
+    position: relative;
+    list-style: none;
+}
+
+li {
+    position: relative;
+    list-style-image: url(InvisibleBullet.gif);
+    height: 1.8em;
+}
+
+#doc1 {
+    position: relative;
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    height: 800px;
+}
+
+.colLeft {
+    float: left;
+    color: #000000;
+    font-weight: bold;
+    background-color: dodgerblue;
+    width: 250px;
+    height: 1.5em;
+}
+
+.colLeftTransparent {
+    float: left;
+    color: #000000;
+    font-weight: bold;
+    background-color: white;
+    width: 250px;
+    height: 1.5em;
+}
+.colRight {
+    float: left;
+    background-color: #e8f2e0;
+    top: 20px;
+}

@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Registration</title>
+    <meta content="javascript" name="vs_defaultClientScript">
+    <meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+    <link href="Styles/StyleSheet.css" rel="stylesheet" />
+    <link href="Styles/NavigationMenu.css" rel="stylesheet" />
+    <link href="Styles/RegStyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="Scripts/XSiteControls.js"></script>
+    <script src="Scripts/XDropdown.js"></script>
+
+</head>
+<body style="font-family:arial">
+    <header>
+        <img src="Images/ColorWheelDaycareLogoDraftPartTwo.png" width="250" height="250" />
+        <img src="Images/ColorWheelDaycareLogoPartFour.png" width="350" height="225" />
+        <a href="https://www.facebook.com/Colour-Wheel-Daycare-1895314463915021/"><img src="Images/FacebookReuseable.jpg" width="100" /></a>
+        <a href="https://twitter.com/WheelColour"><img src="Images/TwitterReusable.png" width="100" /></a>
+    </header>
+    <div id="outerDiv">
+        <nav id="menu">
+
+        </nav>
+
+        <form method="post" action="https://wevmit01.azurewebsites.net/formtest.cshtml"
+              id="Form1">
+            <p align="center" style="FONT-WEIGHT: bold; FONT-SIZE: 20pt; COLOR: navy">
+                New Member Registration
+            </p>
+            <p></p>
+            <p><span id="lblFeedback"><font size="4"></font></span></p>
+
+            <ul>
+                <li>
+                    <label class="colLeft" id="lblFirstNames">First Name(s):</label>
+                    <div class="colRight">
+                        <input name="txtFirstNames" type="text" maxlength="50" id="txtFirstNames" autofocus required />
+
+                    </div>
+                </li>
+                <li>
+                    <label class="colLeft" id="lblLastName">Last Name:</label>
+                    <div class="colRight">
+                        <input name="txtLastName" type="text" maxlength="50" id="txtLastName" required />
+
+                    </div>
+                </li>
+                <li>
+                    <label class="colLeft" id="lblPhone">Phone:</label>
+                    <div class="colRight">
+                        <input name="txtPhone" type="tel" maxlength="50" id="txtPhone" required />
+
+                    </div>
+                </li>
+                <li>
+                    <label class="colLeft" id="lblEmail">E-Mail:</label>
+                    <div class="colRight">
+                        <input name="txtEmail" type="email" maxlength="50" id="txtEmail" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~.-]+@[a-z0-9-]+(\.[a-z0-9-]+)*" required />
+
+                    </div>
+                </li>
+                <li>
+                    <label class="colLeft" id="lblAddress">Address:</label>
+                    <div class="colRight">
+                        <input name="txtAddress" type="text" maxlength="50" id="txtAddress" />&nbsp;(Optional)
+
+                    </div>
+                </li>
+                <li>
+                    <label class="colLeft" id="lblCity:">City:</label>
+                    <div class="colRight">
+                        <input name="txtCity" type="text" maxlength="50" id="txtCity" />&nbsp;(Optional)
+                    </div>
+                </li>
+                <li>
+                    <label class="colLeft" id="lblCountry">Country:</label>
+                    <div class="colRight">
+                        <input name="txtCountry" type="text" maxlength="50" id="txtCountry" />&nbsp;(Optional)
+                    </div>
+                </li>
+                <li>
+                    <label class="colLeft" id="lblChildFirstNames">Child's First Name(s):</label>
+                    <div class="colRight">
+                        <input name="txtChildFirstNames" type="text" maxlength="50" id="txtChildFirstNames" autofocus required />
+
+                    </div>
+                </li>
+                <li>
+                    <label class="colLeft" id="lblChildLastName">Child's Last Name:</label>
+                    <div class="colRight">
+                        <input name="txtChildLastName" type="text" maxlength="50" id="txtChildLastName" required />
+                    </div>
+                </li>
+                <li>
+                    <label class="colLeft" id="lblChildDoB">Child's Date of Birth:</label>
+                    <div class="colRight">
+                        <input name="dateChildDoB" type="date" maxlength="50" id="dateChildDoB" required />
+                    </div>
+                </li>
+                <li>
+                    <label class="colLeft" id="lbldropdownRelation">Relation:</label>
+                    <select id="dropdownRelation" name="dropdownRelation" required>
+                        <option value="" selected><---- Select From List----></option>
+                        <option value="parent">Parent</option>
+                        <option value="grandparent">Grandparent</option>
+                        <option value="sibling">Brother/Sister</option>
+                        <option value="uncleaunt">Uncle/Aunt</option>
+                        <option value="godparent">Godparent</option>
+                        <option value="guardian">Guardian</option>
+                    </select>
+
+                </li>
+
+                <li>
+                    <div class="colRight">
+                        <div id="lblRegisterConditions">Note that when you're approved you will need to set up a meeting to fill in a form for specifics about your child.</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="colRight">
+                        <div id="lblRegisterConditions">In clicking submit, you agree to our <a href="TermsAndConditions.html">Terms and Conditions.</a></div>
+                    </div>
+                </li>
+                <li>
+                    <label class="colLeftTransparent" id="lblSubmit:">&nbsp;</label>
+                    <div class="colRight">
+                        <input type="submit" name="btnSubmit" value="Submit" id="btnSubmit" onclick="dropdown()" />
+                    </div>
+                </li>
+
+            </ul>
+
+            <footer style="clear:both">
+                <img src="Images/ColorWheelDaycareLogoDraftPartTwo.png" width="50" height="50" />
+                <img src="Images/ColorWheelDaycareLogoPartFour.png" width="100" height="50" />
+                <p style="font-size: 8pt">Colour Wheel Daycare: Made in 2018.<a style="font-size: 8pt; text-decoration: none;" href="TermsAndConditions.html">Terms and Conditions.</a></p><br /><br />&nbsp;
+            </footer>
+        </form>
+    </div>
+
+</body>
+</html>

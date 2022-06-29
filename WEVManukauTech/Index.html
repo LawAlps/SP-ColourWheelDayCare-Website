@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Styles/StyleSheet.css" rel="stylesheet" /><!--Body content-->
+    <link href="Styles/NavigationMenu.css" rel="stylesheet" /><!--Nav menu-->
+    <link href="Styles/CanvasAnimationTesting.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="Scripts/XSiteControls.js"></script><!--Shared menu-->
+    <script src="Scripts/XDropdown.js"></script>
+    <script src="Scripts/Slideshowtest.js"></script>
+    <link href="Styles/Slideshow.css" rel="stylesheet" />
+    <script src="Scripts/PaintBackgroundColour.js"></script>
+    <link href="Styles/PaintContent.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img src="Images/ColorWheelDaycareLogoDraftPartTwo.png" width="250" height="250" />
+        <img src="Images/ColorWheelDaycareLogoPartFour.png" width="350" height="225" />
+        <a href="https://www.facebook.com/Colour-Wheel-Daycare-1895314463915021/"><img src="Images/FacebookReuseable.jpg" width="100" /></a>
+        <a href="https://twitter.com/WheelColour"><img src="Images/TwitterReusable.png" width="100" /></a>
+    </header>
+    <div id="outerDiv">
+
+        <nav id="menu">
+            <!--Menu implemented inside shared menu page-->
+        </nav>
+        <br />
+        <div class="container"><center style="font-weight:bold; font-size:30pt; color: black;">THIS IS A MOCKUP FOR A STUDENT PROJECT DONE AT MANUKAU INSTITUTE OF TECHNOLOGY</center></div><br /><br />
+        <div class="container"><center style="font-weight:bold; font-size:20pt; color: darkblue;">WELCOME TO COLOUR WHEEL DAYCARE</center></div><br /><br />
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="Images/Banner4.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/Banner2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/Banner3.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <section class="col6">
+            <center>
+                <p style="font-size: 15pt;">
+                    Colour Wheel Daycare is a 100% Kiwi owned and operated home-based childcare provider that is
+                    licenced by the ministry of education. We provide child care in small groups with well-trained employees.
+                    Here, your child will be playing with other children or singing songs.
+                </p>
+
+                <p style="font-size: 15pt">
+                    You face big decisions as a parent. None bigger than early education. Parents know that at ColourWheel DayCare we make it our passion to nurture a sense of discovery, joy, and wonder in every child. We guide them on this road to discovery with our research-based standards and assessments along six developmental domains:
+
+                </p>
+                <p style="font-size: 15pt">
+                    <b>Language and Literacy Development</b><br />
+                    Involves children’s abilities to convey their ideas, thoughts, and feelings through speaking and writing, and their ability to demonstrate early reading skills.&nbsp;
+                </p>
+
+                <p style="font-size: 15pt">
+                    <b>Executive Function</b>&nbsp;<br />
+                    Focuses on the development of skills necessary for learning, such as self-regulation, attention, and persistence.&nbsp;
+                </p>
+                <p style="font-size: 15pt">
+                    <b>Social and Emotional Development</b>&nbsp;<br />
+                    Supports your child’s ability to express and regulate feelings and develop relations with others.&nbsp;
+                </p>
+                <p style="font-size: 15pt">
+                    <b>Physical Development and Wellness</b>&nbsp;<br />
+                    Gives your child opportunities to build large- and small-muscle skills, strength, stamina, and knowledge needed to live a healthy lifestyle.&nbsp;
+                </p>
+                <p style="font-size: 15pt">
+                    <b>Cognitive Development</b>&nbsp;<br />
+                    Supports the mental processes needed to think, make sense of the world, and understand knowledge across different subjects, including mathematics, science, and social studies.&nbsp;
+                </p>
+                <p style="font-size: 15pt">
+                    <b>Creative Expression</b>&nbsp;<br />
+                    Helps your child creatively explore the arts, movement, drama, and music.&nbsp;
+                </p>
+            </center>
+            <br /><br /><br /><br />&nbsp;
+        </section>
+        <center>
+            <section class="col2">
+                <div id="animationEffect1">
+                    <br />
+                    <a href="Testimonies.html" style="color: darkblue; text-decoration: none"><h1>Explore Our Testimonies</h1></a>
+                </div>
+            </section>
+            <section class="col2">
+                <div id="animationEffect1">
+                    <br />
+                    <a href="Images.html" style="color: darkblue; text-decoration: none"><h1>Explore our Latest Images</h1></a>
+                </div><br /><br />
+            </section>
+        </center>
+
+        <section class="col6">
+            <center>
+                <h2>Mini Painting Game - Paint Penny the Pig</h2>
+                <center>
+                    <div id="paintBackground">
+                        <img id="actualBackground" src="Images/IllustrationOfPig.png" />
+                    </div>
+                </center><br /><br />
+
+                <button onclick="applyPaint('white');" style="background-color:white">White</button>
+                <button onclick="applyPaint('grey');" style="background-color:grey; color: white">Grey</button>
+                <button onclick="applyPaint('red');" style="background-color:red; color: white">Red</button>
+                <button onclick="applyPaint('orange');" style="background-color:orange">Orange</button>
+                <button onclick="applyPaint('blue');" style="background-color:blue; color: white">Blue</button>
+                <button onclick="applyPaint('yellow');" style="background-color:yellow">Yellow</button>
+                <button onclick="applyPaint('green');" style="background-color:green; color: white">Green</button>
+                <button onclick="applyPaint('purple');" style="background-color:purple; color: white">Purple</button>
+
+            </center>
+        </section>
+
+        <footer style="clear:both">
+            <img src="Images/ColorWheelDaycareLogoDraftPartTwo.png" width="50" height="50" />
+            <img src="Images/ColorWheelDaycareLogoPartFour.png" width="100" height="50" />
+            <p style="font-size: 8pt">Colour Wheel Daycare: Made in 2018.<a style="font-size: 8pt; text-decoration: none;" href="TermsAndConditions.html">Terms and Conditions Apply.</a></p><br /><br />&nbsp;
+        </footer>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+</html>
